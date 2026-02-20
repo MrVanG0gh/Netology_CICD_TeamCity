@@ -175,6 +175,6 @@ target/*.jar => .
 
 19. В ответе пришлите ссылку на репозиторий.
 
-https://github.com/MrVanG0gh/example-teamcity.git
+https://github.com/MrVanG0gh/example-teamcity
 
 ---
