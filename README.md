@@ -12,8 +12,8 @@
 ## Результаты подготовки
 
 - Виртуальные машины подготовлены:
-
-![Screen01](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen01.png)
+            https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen01.png
+![Screen01](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen01.png)
 
 - Сделан форк репозитория:
 
@@ -21,11 +21,11 @@ https://github.com/MrVanG0gh/example-teamcity
 
 - Агент авторизован:
 
-![Screen02](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen02.png)
+![Screen02](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen02.png)
 
 - Плейбук запущен и Nexus готов к работе:
 
-![Screen03](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen03.png)
+![Screen03](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen03.png)
 
 
 
@@ -34,25 +34,25 @@ https://github.com/MrVanG0gh/example-teamcity
 
 1. Создайте новый проект в teamcity на основе fork.
 
-![Screen11](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen11.png)
+![Screen11](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen11.png)
 
 2. Сделайте autodetect конфигурации.
 
-![Screen12](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen12.png)
-![Screen13](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen13.png)
+![Screen12](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen12.png)
+![Screen13](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen13.png)
 
 3. Сохраните необходимые шаги, запустите первую сборку master.
 
-![Screen14](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen14.png)
-![Screen15](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen15.png)
+![Screen14](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen14.png)
+![Screen15](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen15.png)
 
 4. Поменяйте условия сборки: если сборка по ветке `master`, то должен происходит `mvn clean deploy`, иначе `mvn clean test`.
 
-![Screen16](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen16.png)
+![Screen16](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen16.png)
 
 5. Для deploy будет необходимо загрузить [settings.xml](./teamcity/settings.xml) в набор конфигураций maven у teamcity, предварительно записав туда креды для подключения к nexus.
 
-![Screen17](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen17.png)
+![Screen17](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen17.png)
 
 6. В pom.xml необходимо поменять ссылки на репозиторий и nexus.
 
@@ -60,13 +60,13 @@ https://github.com/MrVanG0gh/example-teamcity
 
 7. Запустите сборку по master, убедитесь, что всё прошло успешно и артефакт появился в nexus.
 
-![Screen18](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen18.png)
-![Screen19](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen19.png)
+![Screen18](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen18.png)
+![Screen19](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen19.png)
 
 8. Мигрируйте `build configuration` в репозиторий.
 
 https://github.com/MrVanG0gh/example-teamcity/tree/master/.teamcity
-![Screen20](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen20.png)
+![Screen20](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen20.png)
 
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
 
@@ -151,7 +151,7 @@ public class WelcomerTest {
 
 13. Убедитесь, что сборка самостоятельно запустилась, тесты прошли успешно.
 
-![Screen21](https://github.com/MrVanG0gh/Netology_CICD_TemCity/blob/main/Screens/Screen21.png)
+![Screen21](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen21.png)
 
 14. Внесите изменения из произвольной ветки `feature/add_reply` в `master` через `Merge`.
 
