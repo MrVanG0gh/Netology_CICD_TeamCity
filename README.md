@@ -27,9 +27,6 @@ https://github.com/MrVanG0gh/example-teamcity
 
 ![Screen03](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen03.png)
 
-
-
-
 ## Основная часть
 
 1. Создайте новый проект в teamcity на основе fork.
@@ -66,6 +63,7 @@ https://github.com/MrVanG0gh/example-teamcity
 8. Мигрируйте `build configuration` в репозиторий.
 
 https://github.com/MrVanG0gh/example-teamcity/tree/master/.teamcity
+
 ![Screen20](https://github.com/MrVanG0gh/Netology_CICD_TeamCity/blob/main/Screens/Screen20.png)
 
 9. Создайте отдельную ветку `feature/add_reply` в репозитории.
